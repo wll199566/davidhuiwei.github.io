@@ -1,2 +1,5 @@
+---
+permalink: /index.html
+---
 # davidhuiwei.github.io
-my personal webpage
+My personal webpage
