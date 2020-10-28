@@ -150,8 +150,8 @@
                 <br>
                 <br>
                 <a href="#about">[About]</a> 
-                <a href="#Announcement">[Announcement]</a> 
-                <a href="#Speaker">[Past Speakers]</a>
+                <a href="#announcement">[Announcement]</a> 
+                <a href="#previous speakers">[Previous Speakers]</a>
                 <a href="#contact us">[Contact Us]</a>
             </p>
         </td>
@@ -160,284 +160,39 @@
 </tbody></table>
 
 <hr>
-<a name="about me" class="disabled"><h2> About Me </h2></a>
+<a name="About" class="disabled"><h2> About </h2></a>
 <ul>
-    I am a first year PhD student in UMass Amherst, working in <a href="https://bio-nlp.org/index.php">BioNLP group</a> led by <a href="https://bio-nlp.org/index.php/people" target="_blank">Prof. Hong Yu</a>. Prior to that, when I pursued my Master's degree in NYU, I was fortunate to work with <a href="http://razavian.net/" target="_blank">Prof. Narges Razavian</a> on dementia subtype and disease onset prediction. Please see my <a href="./docs/Resume.pdf" target="_blank">Resume</a> for more information.
+Data Meets Healthcare seminar series happens in on biweekly Monday at 2:00-3:00pm. This seminar right now is organized entirely online via Zoom meeting. The format is to invite researchers to give talks about their works combining data and healthcare. Our ultimate goal is to learn and communicate with each other to make digital healthcare and medicine more accurate and robust. 
 </ul>    
 
-<hr>
-<a name="research" class="disabled"><h2> Research Interests </h2></a>
-<ul> 
-    <!-- <li>
-    I'm interested in probabilistic inference and various topics in statistical machine learning. I have also spent time working on natural language processing.
-    </li> -->
-    Broadly, my research interests lie in both theory and application of machine learning, with application in healthcare. Currently, I am working on interpretability and fairness of machine/deep learning for healthcare, and Biomedical NLP. Our methods include but not limit to machine/deep learning and statistics. 
-</ul>
-
-<hr>
-<a name="education and experience" class="disabled"><h2> Education and Experience</h2></a>
-<ul>
-    <li> 2020.9 - Now: PhD student in Computer Science, UMass Amherst, USA.</li>
-    <li> 2019.7 - 2020.6: Research Assistant in Population Health department, NYU Langone Health, USA</li>
-    <li> 2017.9 - 2019.5: Master's student in Computer Science, New York University, USA</li>
-    <li> 2013.9 - 2017.6: Bachelor's student in Telecommunication Engineering, Bejing University of Posts and Telecommunications (BUPT), China</li>
-</ul>
-
-<!--<hr> -->
-<!--<a name="publications" class="disabled"><h2> Publications </h2></a>-->
-<!-- <select id="select-year" onchange="selYear()">
-    <option value="all">all</option>
-    <option value="2017">2017</option>
-    <option value="2018">2018</option>
-</select> -->
-
-<!--<div id="publications"></div>
-<script>
-    var publications = [
-        {
-            url: 'https://arxiv.org/abs/1710.01789',
-            title: 'Enhanced Neural Machine Translation by Learning from Draft',
-            authers: ['Aodong Li', 'Shiyue Zhang', 'Dong Wang', 'Thomas Fang Zheng'],
-            pub: 'APSIPA ASC ',
-            time: '2017',
-            code: 'https://github.com/aodongli/LearningFromDraft'
-        }
-    ];
-    var filter = function (year) {
-        var final = [];
-        for (var i = 0; i < publications.length; i++) {
-            if (publications[i].time == year) {
-                final.push(publications[i]);
-            }else if(year == 'all'){
-                final.push(publications[i]);
-            }
-        }
-        return final;
-    };
-    var outputHtml = function (publicationsArr) {
-        var html = [];
-        for (var i = 0; i < publicationsArr.length; i++) {
-            html.push('<ul><li><b><a href="' + publicationsArr[i].url + '" target="_blank">' + publicationsArr[i].title + '</a></b>');
-            if ('code' in publicationsArr[i]) {
-                html.push('<a href="' + publicationsArr[i].code + '"target="_blank"> [code]</a>')
-            }
-            html.push('<br>');
-            var auther = [];
-            for (var j = 0; j < publicationsArr[i].authers.length; j++) {
-                if (publicationsArr[i].authers[j] == 'Aodong Li') {
-                    auther.push('<b>Aodong Li</b>');
-                } else if (publicationsArr[i].authers[j] == 'Aodong Li*') {
-                   auther.push('<b>Aodong Li*</b>');
-                } else {
-                    auther.push(publicationsArr[i].authers[j]);
-                }
-            }
-            html.push(auther.join(', '));
-            html.push('.</li>');
-            html.push(publicationsArr[i].pub + publicationsArr[i].time);
-            html.push('</ul>');
-        }
-        var container = document.getElementById('publications');
-        container.innerHTML = html.join('');
-    };
-    var initPub = function (year) {
-        var publicationsArr = filter(year);
-        outputHtml(publicationsArr);
-    };
-    var selYear = function () {
-        var selector = document.getElementById('select-year');
-        var year = selector.value;
-        initPub(year);
-    };
-    window.onload = function () {
-        initPub("all");
-    };
-
-</script> -->
-
-<hr>
-<a name="projects" class="disabled"><h2> Projects </h2></a>
-<!--<h3> Research Projects </h3>-->
-<ul>
-    <li><b>Multitask Prediction of Disease Onset from EHR data</b>
-        <br>    
-        Advised by <a href="http://razavian.net/" target="_blank">Prof. Narges Razavian</a>.
-        <br>
-        Using 100 most common lab values of NYU EHR data and deep learning, we try to predict 283 disease onset with the time gap of one year. 
-    </li>
-    
-    <br>
-    
-    <li><b>Dementia Subtype Prediction at the First Visit of Early Stages </b><a href="./docs/Dementia_Subtype_Abstract.pdf" target="_blank">[Abstract]</a></b><a href="./docs/Dementia_Subtype_Paper(draft).pdf" target="_blank">[paper draft]</a><a href="https://github.com/wll199566/NACC_Dementia_Subtype" target="_blank" >[code]</a>
-        <br>
-        Advised by <a href="http://razavian.net/" target="_blank">Prof. Narges Razavian</a>.
-        <br>
-        Applied Multiclass Logistic Regression and Multilayer Perceptron to predict four dementia subtypes (Pure Alzheimer's Disease (AD), Pure Lewy Body Dementia (LBD), Mix AD+LBD, None of these) at the first time patients are detected as mild or very mild dementia. 
-    </li>
-    
-    <br>
-
-<!--    <li><b>Track-Net</b>
-        <br>
-        Advised by <a href="https://chengeli.github.io/personal_site/" target="_blank">Dr. Chenge Li</a> and <a href="http://eeweb.poly.edu/~yao/" target="_blank"> Prof. Yao Wang</a>.
-        <br>
-        Leveraged Detect-to-Track-and-Track-to-Detect model fine-tuned from <a href="http://image-net.org/index" target="_blank">ImageNet dataset</a> on <a href="https://iwt4s.wordpress.com/challenge/" target="_blank">UADETRAC traffic video dataset</a>, trying to get dynamic bounding boxes of vehicles.   
-    </li>
-
-    <br>
-
-
-    <li><b>ID Card Detection and Information Extraction</b>
-        <br> 
-        Advised by <a href="http://www.pris.ink/index.php/xiaobo/" target="_blank">Prof. Bo Xiao</a>.
-        <br>
-        Designed an automatic system using SIFT descriptors and matching algorithms to detect ID cards within different backgrounds, and OCR technique to extract identity information.
-    </li>
-
-    <br>
-
-    <li><b>Automatic Door Locking and Lights off System</b>
-        <br> 
-        Advised by <a href="https://see.bupt.edu.cn/content/content.php?p=8_18_48" target="_blank">Prof. Yunxiao Zu</a>.
-        <br>
-        Designed a control system with an microcontoller unit and a bluetooth module which can automatically lock the door and switch the lights off.
-    </li>-->
-
-
-</ul>
 
 
 <hr>
-<a name="Hosted Seminars" class="disabled"><h2> Hosted Seminars</h2></a>
+<a name="Announcement" class="disabled"><h2> Announcement </h2></a>
 <ul>
-    From Fall 2020, I will host the <b>Data and Healthcare</b> seminar for students and faculty in BioNLP group and UMass. Please check our webpage of this event. 
+    Upcomming speakers:
+    <li><a href="https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Uri.Kartoun" target="_blank">Dr. Uri Kartoun</a> (IBM Research) will give us a talk on 11/16/2020!</a></li>
+    <li><a href="https://rdmelamed.github.io/" target="_blank">Dr. Rachel Melamed</a> (UMass Lowll) will give us a talk on 11/23/2020!</a></li>
+    <li><a href="https://sites.google.com/site/cornellwanglab/home" target="_blank">Dr. Fei Wang</a> (Cornell) will give us a talk on 11/30/2020!</a></li>
 </ul>
 
-<!--
-<h3> Class Projects </h3></a>
-<ul>
-    <li><b><a href="./docs/CheXpertNet.pdf" target="_blank">CheXpertNet</a></b><a href="https://github.com/wll199566/CheXpert" target="_blank"> [code]</a>
-        <br>
-        Deep Learning in Medicine (Narges Razavian, Cem Deniz), Spring 2019
-        <br>
-    </li>
-    
-    <br>
-
-    <li><b><a href="./docs/BV Segmentation.pdf" target="_blank">Deep Segmentation for Mouse Embryo Brain Ventricles</a></b><a href="https://github.com/wll199566/Deep-Segmentation-for-Mouse-Embro-Brain-Ventricles" target="_blank"> [code]</a>
-        <br>
-        Machine Learning for Healthcare (Rajesh Ranganath), Fall 2018
-        <br>
-    </li>
-    
-    <br>
-
-    <li><b><a href="./docs/Generate_chairs.pdf" target="_blank">Learning to Generate Chaires with Convolutional Nerual Networks</a></b><a href="https://github.com/bmahlbrand/Learning-to-Generate-Chairs-with-Convolutional-Neural-Networks" target="_blank"> [code]</a>
-        <br>
-        Computer Vision (Rob Fergus), Fall 2018
-        <br>
-    </li>
-
-    <br>
-
-    <li><b><a href="./docs/FML-FA18-Project-hw1666-xc1113.pdf" target="_blank">Transfer Learning for Text Classification</a></b><a href="https://github.com/wll199566/Text_Classification" target="_blank"> [code]</a>
-        <br>
-        Foundations of Machine Learning (Mehryar Mohri), Fall 2018
-        <br>
-    </li>
-
-    <br>
-
-    <li><b><a href="./docs/k-means-sdp.pdf" target="_blank">K-means: A Semidefinite Programming’s Perspective</a></b>
-        <br>
-        Convex and Nonsmooth Optimization (Michael L. Overton), Spring 2018
-        <br>
-    </li>
-
-    <br>
-
-    <li><b><a href="./docs/vision meets ml final presentation.pdf" target="_blank">No Game No Driving - Transfer driving task via cycleGAN</a></b>
-        <br>
-        Vision Meets Machine Learning (Davi Geiger), Fall 2017
-        <br>
-    </li>
-
-</ul>
--->
 
 
 <hr>
-<a name="miscellaneous" class="disabled"><h2> Miscellaneous </h2></a>
-
+<a name="Previous Speakers" class="disabled"><h2> Previous Speakers</h2></a>
 <ul>
-    <li><b><a href="./docs/Notes_for_Neural_ODE.pdf" target="_blank">Notes for Neural ODE paper</a></b></li>
-    <li><b><a href="./docs/Note_for_Survival_Analysis.pdf" target="_blank">Notes for Survival Analysis</a></b> (reference book: Survival Analysis A Self-Learning Text, Third Edition, by David G. Kleinbaum and Mitchel Klein)</li>
-    <!--
-    <li><b><a href="./docs/Notes_for_PRML.pdf" target="_blank">Notes for Pattern Recognition and Machine Learning</a></b></li>
-    <li><b><a href="./docs/Notes_for_Object_Detection_Papers.pdf" target="_blank">Notes for Object Detection Papers</a></b></li>
-    <li><b><a href="./docs/Notes_for_Sequence_Models.pdf" target="_blank">Notes for Sequence-to-Seqence Papers</a></b></li>
-    <li><b><a href="./docs/Notes_for_VQA_and_QA_papers.pdf" target="_blank">Notes for Question Answering Papers</a></b></li>
-    <li><b><a href="./docs/Notes_for_Deep_Learning_in_Medicine_papers.pdf" target="_blank">Notes for Deep Learning in Medicine Papers</a></b></li>
-    <li><b><a href="./docs/Notes_for_Alzheimer_Literatures_Review.pdf" target="_blank">Notes for Alzheimer Literatures</a></b></li>
-    <li><b><a href="./docs/Transfer Learning for Healthcare.pdf" target="_blank">Presentation Slides for Machine Learning for Healthcare course</a></b></li>
-    <li><b><a href="./docs/Transformer4AD.pdf" target="_blank">Presentation Slides for Razavian Lab Meeting</a></b></li>
-    -->
-</ul>
-
-<!--
-<hr>
-<a name="scholastic_achievements" class="disabled"><h2> Scholastic Achievements </h2></a>
-<li>BUPT Second Class Merit Student Scholarship in 2013-2014</li>
-<li>BUPT Third Class Merit Student Scholarship in 2014-2017</li>
--->
-
-<!--<a name="talks" class="disabled"><h3> Talks </h3></a>
-
-<ul>
-    <li><b><a href="./files/learning_from_draft.pdf" target="_blank">Enhanced Neural Machine Translation by Learning from Draft </a></b>, CSLT, Tsinghua University, Beijing, China, June 2017</li>
+    <li> 10/05/2020: <a href="https://wll199566.github.io/davidhuiwei.github.io/">Hui Wei</a> (PhD at UMass Amherst): "Deeper" Attentional Prediction Models <a href="https://drive.google.com/file/d/1X060FpP8-nokGV5cvRkRD4EfmbemPwIq/view?usp=sharing" target="_blank">[slides]</a></li>
+    <li> 10/19/2020: <a href="http://faculty.uml.edu/~alam/" target="_blank">Mohammad Arif UI Alam</a> (UMass Lowell): Causal Inference and Interpretable AI <a href="https://youtu.be/PioCcCd0h9s">[video]</a></li>
 </ul>
 
 
-<a name="awards" class="disabled"><h3> Awards </h3></a>
-
-<ul>
-    <li><b>Computer Science Department’s M.S. Thesis/Research Fellowship, Fall 2018</b></li>
-</ul>
-
-
-<a name="others" class="disabled"><h3> Others </h3></a>
-
-<ul>
-    <li><b> Teaching assistant:</b></li> 
-     <a name="others" class="disabled"><h4> Teaching assistant </h4></a>
-
-    <ul>
-
-    <li><b><a href="http://www.stephanmandt.com/courses/intro-to-ML.html" target="_blank">Introduction to Machine Learning, Fall 2019</a></b></li>
-    <li><b><a href="https://cs.nyu.edu/courses/spring19/CSCI-GA.2565-001/" target="_blank">Machine Learning, Spring 2019</a></b></li>
-    <li><b><a href="https://cs.nyu.edu/courses/fall18/CSCI-GA.1170-001/" target="_blank">Foundamental Algorithms, Fall 2018</a></b></li>
-
-    </ul>
-
-</ul>
--->
 
 <hr>
-<a name="hobbies" class="disabled"><h2> Hobbies </h2></a>
-Basketball, running, swimming, hiking, reading, music, movies
-<hr>
+<a name="Contact Us" class="disabled"><h2> Contact Us </h2></a>
+<ul>
+        If you wish to join in the google group, please email <a href="mailto:wllnyubupt@gmail.com">Hui Wei</a>. Thanks!
 
-<br>
-last updated: 2020/10/19
-
-<!-- <ul>
-    <a href="https://info.flagcounter.com/3P4w"><img src="./files/saved_resource" alt="Flag Counter" border="0"></a>
-</ul> -->
-
-<script>
-
-</script>
-
+</ul>
 
 
 </body></html>
