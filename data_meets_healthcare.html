@@ -9,18 +9,34 @@
 
     a {
         text-decoration: none;
-        color: #003399;
+        color: #800000;
     }
 
     a:hover {
         text-decoration: underline;
-        color: #CC0000;
+        color: #000000;
     }
 
     .musicbg {
         background: darkorchid;
         position: fixed;
         right: 35px;
+    }
+    
+    table.table1{
+        border: none;
+    }
+    
+    table.table2 {
+        border: 1px solid black;
+        border-spacing: 5px;
+    }
+    
+    table.table2.th {
+        border: 1px solid black;
+    }
+    table.table2.td {
+        border: 1px solid black;
     }
 </style>
 
@@ -137,7 +153,7 @@
 
 <body>
 <!--autoplay="autoplay"-->
-<table cellpadding="30" style="font-size: 18px">
+<table class="table1" cellpadding="30" style="font-size: 18px" >
     <tbody><tr>
         <!--<td><a href="./img/huihui.jpeg"><img src="./img/huihui.jpeg" alt="Hui Wei" width="300" height="225"></a></td>-->
         <td>
@@ -168,11 +184,56 @@ Data Meets Healthcare seminar series happens in on biweekly Monday at 2:00-3:00p
 
 
 <hr>
-<a name="upcoming events" class="disabled"><h2> Upcoming Events </h2></a>
+<a name="upcoming events" class="disabled"><h2> Spring 2021 Schedule </h2></a>
 <ul>
-    Looking forward to seeing you in the next semester!
+<table class="table2">
+    <tr>
+        <th> Speaker </th>
+        <th> Affiliation </th>
+        <th> Date </th>     
+    </tr>
+    <tr>
+        <td> John F. McCarthy </td>
+        <td> Veterans Affairs </td>
+        <td> 02/15/2021 </td>
+    </tr>  
+    <tr>
+        <td> Anna Rumshisky </td>
+        <td> UMass Lowell CS </td>
+        <td> 03/01/2021 </td>
+    </tr> 
+    <tr>
+        <td> Tristan Naumann </td>
+        <td> Microsoft </td>
+        <td> 03/15/2021 </td>
+    </tr>     
+    <tr>
+        <td> Ben Marlin </td>
+        <td> UMass Amherst CS </td>
+        <td> 03/22/2021 </td>
+    </tr>  
+    <tr>
+        <td> Laura Balzer </td>
+        <td> UMass Amherst Biostatistics </td>
+        <td> 03/29/2021 </td>
+    </tr>  
+    <tr>
+        <td> Allen Schmaltz </td>
+        <td> Havard Epidemiology </td>
+        <td> 04/05/2021 </td>
+    </tr>  
+    <tr>
+        <td> Rajesh Ranganath </td>
+        <td> NYU CS </td>
+        <td> 04/19/2021 </td>
+    </tr>  
+    <tr>
+        <td> Fenglong Ma </td>
+        <td> Penn State CS </td>
+        <td> 05/03/2021 </td>
+    </tr>  
+</table>
 </ul>
-
 
 
 <hr>
