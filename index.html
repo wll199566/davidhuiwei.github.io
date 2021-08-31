@@ -9,12 +9,12 @@
 
     a {
         text-decoration: none;
-        color: #003399;
+        color: #000000;
     }
 
     a:hover {
         text-decoration: underline;
-        color: #CC0000;
+        color: #971B2F;
     }
 
     .musicbg {
@@ -140,22 +140,23 @@
 
 <table cellpadding="20" style="font-size: 18px">
     <tbody><tr>
-        <td><a href="./img/huihui.jpeg"><img src="./img/huihui.jpeg" alt="Hui Wei" width="300" height="225"></a></td>
+        <td><a href="./img/hui.jpeg"><img src="./img/hui.jpeg" alt="Hui Wei" width="240" height="320"></a></td>
         <td>
             <h1> </h1>
             <p><font size="+2"><b>Hui Wei</b></font></p>
-            <p><font size="+1"><b>PhD in Computer Science</b>
+            <p><font size="+1"><b>PhD student in Computer Science</b>
+            <p><font size="+1"><b>College of Information & Computer Sciences</b>
             <p><font size="+1"><b>University of Massachusetts, Amherst</b> 
                 <br>
                 <br>
-                <b>Email</b>: </font> huiwei@umass.cs.edu <br>
+                <b>Email</b>: huiwei@cs.umass.edu <br>
                 <br>
                 <br>
                 <a href="#about me">[About Me]</a> 
                 <a href="#research">[Research Interests]</a> 
-                <a href="#education">[Education and Experience]</a>
-                <a href="#projects">[Projects]</a>
-                <a href="#seminar">[Organized Seminar]</a>
+                <a href="#education">[Education and Work Experiences]</a>
+                <!--<a href="#projects">[Projects]</a>-->
+                <!--<a href="#seminar">[Organized Seminar]</a>-->
                 <a href="#miscellaneous">[Miscellaneous]</a>
                 <!--<a href="#scholastic_achievements">[Scholastic Achievements]</a>--> 
                 <a href="#hobbies">[Hobbies]</a> <br>
@@ -169,17 +170,21 @@
 <hr>
 <a name="about me" class="disabled"><h2> About Me </h2></a>
 <ul>
-    I am a first year PhD student in UMass Amherst, working in <a href="https://bio-nlp.org/index.php">BioNLP group</a> led by <a href="https://bio-nlp.org/index.php/people" target="_blank">Prof. Hong Yu</a>. Prior to that, when I pursued my Master's degree in NYU, I was fortunate to work with <a href="http://razavian.net/" target="_blank">Prof. Narges Razavian</a> on dementia subtype and disease onset prediction. Please see my <a href="./docs/Resume.pdf" target="_blank">Resume</a> for more information.
+    I am a second year PhD student in <a href="https://www.umass.edu/" target="_blank">UMass Amherst</a>, 
+    working with Prof.<a href="https://groups.cs.umass.edu/marlin/" target="_blank">Benjamin Marlin</a>. 
+    Prior to that, when I pursued my Master's degree in NYU, 
+    I was fortunate to work with <a href="http://razavian.net/" target="_blank">Prof. Narges Razavian</a> on dementia subtype and disease onset prediction. 
+    Please see my <a href="./docs/Resume.pdf" target="_blank">resume</a> for more information.
 </ul>    
 
 <hr>
 <a name="research" class="disabled"><h2> Research Interests </h2></a>
 <ul> 
-    Broadly, my research interests lie in both theory and application of machine learning focusing on healthcare. Currently, I am working on biomedical predictive models. My methods include but not limit to machine/deep learning and statistics. 
+    Broadly, my research interests lie in both theory and application of machine learning focusing on healthcare and time series data.
 </ul>
 
 <hr>
-<a name="education and experience" class="disabled"><h2> Education and Experience</h2></a>
+<a name="education and work experiences" class="disabled"><h2> Education and Work Experiences</h2></a>
 <ul>
     <li> 2020.9 - Now: PhD student in Computer Science, UMass Amherst, USA.</li>
     <li> 2019.7 - 2020.6: Research Assistant in Population Health department, NYU Langone Health, USA</li>
@@ -187,81 +192,9 @@
     <li> 2013.9 - 2017.6: Bachelor's student in Telecommunication Engineering, Bejing University of Posts and Telecommunications (BUPT), China</li>
 </ul>
 
-<!--<hr> -->
-<!--<a name="publications" class="disabled"><h2> Publications </h2></a>-->
-<!-- <select id="select-year" onchange="selYear()">
-    <option value="all">all</option>
-    <option value="2017">2017</option>
-    <option value="2018">2018</option>
-</select> -->
-
-<!--<div id="publications"></div>
-<script>
-    var publications = [
-        {
-            url: 'https://arxiv.org/abs/1710.01789',
-            title: 'Enhanced Neural Machine Translation by Learning from Draft',
-            authers: ['Aodong Li', 'Shiyue Zhang', 'Dong Wang', 'Thomas Fang Zheng'],
-            pub: 'APSIPA ASC ',
-            time: '2017',
-            code: 'https://github.com/aodongli/LearningFromDraft'
-        }
-    ];
-    var filter = function (year) {
-        var final = [];
-        for (var i = 0; i < publications.length; i++) {
-            if (publications[i].time == year) {
-                final.push(publications[i]);
-            }else if(year == 'all'){
-                final.push(publications[i]);
-            }
-        }
-        return final;
-    };
-    var outputHtml = function (publicationsArr) {
-        var html = [];
-        for (var i = 0; i < publicationsArr.length; i++) {
-            html.push('<ul><li><b><a href="' + publicationsArr[i].url + '" target="_blank">' + publicationsArr[i].title + '</a></b>');
-            if ('code' in publicationsArr[i]) {
-                html.push('<a href="' + publicationsArr[i].code + '"target="_blank"> [code]</a>')
-            }
-            html.push('<br>');
-            var auther = [];
-            for (var j = 0; j < publicationsArr[i].authers.length; j++) {
-                if (publicationsArr[i].authers[j] == 'Aodong Li') {
-                    auther.push('<b>Aodong Li</b>');
-                } else if (publicationsArr[i].authers[j] == 'Aodong Li*') {
-                   auther.push('<b>Aodong Li*</b>');
-                } else {
-                    auther.push(publicationsArr[i].authers[j]);
-                }
-            }
-            html.push(auther.join(', '));
-            html.push('.</li>');
-            html.push(publicationsArr[i].pub + publicationsArr[i].time);
-            html.push('</ul>');
-        }
-        var container = document.getElementById('publications');
-        container.innerHTML = html.join('');
-    };
-    var initPub = function (year) {
-        var publicationsArr = filter(year);
-        outputHtml(publicationsArr);
-    };
-    var selYear = function () {
-        var selector = document.getElementById('select-year');
-        var year = selector.value;
-        initPub(year);
-    };
-    window.onload = function () {
-        initPub("all");
-    };
-
-</script> -->
-
+<!--
 <hr>
 <a name="projects" class="disabled"><h2> Projects </h2></a>
-<!--<h3> Research Projects </h3>-->
 <ul>
     <li><b>Multitask Prediction of Disease Onset from EHR data</b>
         <br>    
@@ -280,6 +213,7 @@
     </li>
     
     <br>
+-->    
 
 <!--    <li><b>Track-Net</b>
         <br>
@@ -310,12 +244,21 @@
 
 </ul>
 
+<hr>
+<a name="publications" class="disabled"><h2>Publications</h2></a>
+<ul>
+    <li><b>Hui Wei</b>, Arjun V. Masurkar, Narges Razavian. 
+        <a href="https://www.medrxiv.org/content/10.1101/2021.05.05.21256720v1" target="_blank"><em>On Gaps of Clinical Diagnosis of Dementia Subtypes: A Study of Alzheimer’s Disease and Lewy Body Disease</em></a>, AAIC 2021.
+    </li>  
+</ul>    
 
+<!--
 <hr>
 <a name="seminar" class="disabled"><h2> Organized Seminars</h2></a>
 <ul>
     From Fall 2020, I will organize the <b><a href="./data_meets_healthcare.html" target="_blank">Data meets Healthcare</a></b> seminar for students and faculty in BioNLP group and UMass. Please check our webpage of this event. 
 </ul>
+-->
 
 <!--
 <h3> Class Projects </h3></a>
@@ -435,7 +378,7 @@ Basketball, running, swimming, hiking, reading, music, movies
 Stay Hungry, Stay Foolish. -- Steve Jobs
 
 <br>
-last updated: 2021/02/07
+last updated: 2021/08/31
 
 <!-- <ul>
     <a href="https://info.flagcounter.com/3P4w"><img src="./files/saved_resource" alt="Flag Counter" border="0"></a>
