@@ -1,5 +1,5 @@
 ---
 permalink: /index.html
 ---
-# Hui Wei's Personal Webpage
+# davidhuiwei.github.io
 My personal webpage
